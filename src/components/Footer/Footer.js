@@ -1,7 +1,7 @@
 import Beije from "../../assets/logo/beije-light-logo.png"
-import {Button, TextInput} from "@mantine/core";
 
-const Footer = () => {
+
+const Footera = () => {
     return(
         <footer className="py-10 lg:py-20 px-7 lg:px-[144px] bg-[#262626] text-[#ffff] flex items-center justify-center flex-col">
             <section className="flex items-center justify-between gap-8 lg:flex-row flex-col">
@@ -118,4 +118,4 @@ const Footer = () => {
     )
 }
 
-export default Footer
+export default Footera

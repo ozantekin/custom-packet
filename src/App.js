@@ -1,9 +1,12 @@
+import Navigation from "./components/Navigation/Navigation";
+import Footer from "./components/Footer/Footer";
 
 
 function App() {
   return (
     <div >
-     <h1 className="text-red-500 font-bold" > Custom Pack </h1>
+    <Navigation/>
+      <Footer/>
     </div>
   );
 }

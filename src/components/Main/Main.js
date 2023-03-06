@@ -1,6 +1,5 @@
 import MainLeft from "../MainLeft/MainLeft";
 import MainRight from "../MainRight/MainRight";
-import MainModal from "../MainModal/MainModal";
 
 const Main = () => {
     return(

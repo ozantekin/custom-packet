@@ -1,4 +1,4 @@
-import {Slider, Tabs} from "@mantine/core";
+import {Tabs} from "@mantine/core";
 import MainLeftSliderFirst from "../MainLeftSliderFirst/MainLeftSliderFirst";
 
 const MainLeftTabs = () => {

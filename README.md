@@ -1,6 +1,6 @@
 # Custom Packet
 
-- [Live Demo ↥](beije-custom-packet.netlify.app)
+- [Live Demo ↥](https://beije-custom-packet.netlify.app)
 
 ## 🎒 Included in the project
 - React 
@@ -13,4 +13,4 @@
 
 ### 👀 Updates:
 - The hover text color of the email button in the footer has been changed.
-- Responsive updates have been made to the footer. 
+- Responsive updates have been made to the footer.

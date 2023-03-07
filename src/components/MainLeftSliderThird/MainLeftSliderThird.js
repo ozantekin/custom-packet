@@ -1,15 +1,12 @@
 import {Slider} from "@mantine/core";
 import {
-    dispatchFirstTabPrice,
-    dispatchPlusPed,
-    dispatchStandardPed,
-    dispatchSupPed
+    dispatchMiniTampon, dispatchStandardTampon, dispatchThirdTabPrice,
 } from "../../redux/dispatch/dispatch";
 import {useSelector} from "react-redux";
 
-const MainLeftSliderFirst = () => {
+const MainLeftSliderThird = () => {
     const MARKS = [
-        { value: 0, price: 29.73},
+        { value: 0},
         { value: 10 },
         { value: 20 },
         { value: 30},
@@ -18,27 +15,22 @@ const MainLeftSliderFirst = () => {
         { value: 60 },
     ];
 
-    const {standardValue, supValue, plusValue} = useSelector((state) => state.beijePed)
+    const {miniTamponValue, standardTamponValue} = useSelector((state) => state.beijePed)
 
-    const handleStandardValueChange = (e) => {
-        dispatchStandardPed(e)
-        dispatchFirstTabPrice()
+    const handleMiniTamponValueChange = (e) => {
+        dispatchMiniTampon(e)
+        dispatchThirdTabPrice()
+
     }
-
-    const handleSupValueChange = (e) => {
-        dispatchSupPed(e)
-        dispatchFirstTabPrice()
-    }
-
-    const handlePlusValueChange = (e) => {
-        dispatchPlusPed(e)
-        dispatchFirstTabPrice()
+    const handleStandardTamponValueChange = (e) => {
+       dispatchStandardTampon(e)
+        dispatchThirdTabPrice()
     }
 
     return(
         <div>
             <div className="mb-4">
-                <p className="mb-4">Standart Ped</p>
+                <p className="mb-4">Mini Tampon</p>
                 <Slider
                     min={0}
                     max={60}
@@ -46,54 +38,8 @@ const MainLeftSliderFirst = () => {
                     marks={MARKS}
                     size="xs"
                     radius="xl"
-                    value={standardValue}
-                    onChange={handleStandardValueChange}
-                    styles={(theme) => ({
-                        bar : {
-                            backgroundColor: "#333131",
-                        },
-                        label: {
-                            backgroundColor:"#757575",
-                            paddingTop: "0px !important",
-                            paddingLeft: "12px",
-                            paddingRight: "12px",
-                            fontSize: "14px",
-                            fontWeight: "500",
-                        },
-                        mark: {
-                            borderColor: "#333131",
-
-                        },
-                        markFilled: {
-                            borderColor: "#AEABA9",
-                        },
-                        markLabel: {display: 'none' },
-                        thumb: {
-                            height: "20px",
-                            width: "20px",
-                            backgroundColor: "#333131",
-                            borderWidth: "0px",
-                            boxShadow: "#D8D6D2",
-                        },
-                    })}
-
-                />
-               <div className= "w-full flex items-center justify-between mt-5">
-                   <span>0</span>
-                   <span>60</span>
-               </div>
-            </div>
-            <div className="mb-4">
-                <p className="mb-4">Süper Ped</p>
-                <Slider
-                    min={0}
-                    max={60}
-                    step={10}
-                    marks={MARKS}
-                    size="xs"
-                    radius="xl"
-                    value={supValue}
-                    onChange={handleSupValueChange}
+                    value={miniTamponValue}
+                    onChange={handleMiniTamponValueChange}
                     styles={(theme) => ({
                         bar : {
                             backgroundColor: "#333131",
@@ -129,8 +75,8 @@ const MainLeftSliderFirst = () => {
                     <span>60</span>
                 </div>
             </div>
-            <div>
-                <p className="mb-4">Süper<sup className="text-base relative top-[-1px]">+</sup> Ped</p>
+            <div className="mb-4">
+                <p className="mb-4">Standart Tampon</p>
                 <Slider
                     min={0}
                     max={60}
@@ -138,8 +84,8 @@ const MainLeftSliderFirst = () => {
                     marks={MARKS}
                     size="xs"
                     radius="xl"
-                    value={plusValue}
-                    onChange={handlePlusValueChange}
+                    value={standardTamponValue}
+                    onChange={handleStandardTamponValueChange}
                     styles={(theme) => ({
                         bar : {
                             backgroundColor: "#333131",
@@ -179,4 +125,4 @@ const MainLeftSliderFirst = () => {
     )
 }
 
-export default MainLeftSliderFirst
+export default MainLeftSliderThird

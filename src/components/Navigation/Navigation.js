@@ -4,7 +4,7 @@ import { Indicator} from '@mantine/core';
 
 const Navigation = () => {
     return (
-       <header className="fixed top-0 w-full bg-[#F5F5F5] py-[7px] lg:py-[19px] text-[#191919]">
+       <header className="fixed top-0 z-40 w-full bg-[#F5F5F5] py-[7px] lg:py-[15px] text-[#191919]">
            <div className="flex items-center justify-between px-7 lg:px-[149px]">
                 <div>
                     <img src={Beije} alt="Beije Logo" height={24} width={96} className="cursor-pointer"/>

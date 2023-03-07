@@ -49,6 +49,11 @@ const MainLeftSliderFirst = () => {
                     value={standardValue}
                     onChange={handleStandardValueChange}
                     styles={(theme) => ({
+                        track: {
+                            "&:before": {
+                                backgroundColor: "#AEABA9",
+                            }
+                        },
                         bar : {
                             backgroundColor: "#333131",
                         },
@@ -95,6 +100,11 @@ const MainLeftSliderFirst = () => {
                     value={supValue}
                     onChange={handleSupValueChange}
                     styles={(theme) => ({
+                        track: {
+                          "&:before": {
+                              backgroundColor: "#AEABA9",
+                          }
+                        },
                         bar : {
                             backgroundColor: "#333131",
                         },
@@ -141,6 +151,11 @@ const MainLeftSliderFirst = () => {
                     value={plusValue}
                     onChange={handlePlusValueChange}
                     styles={(theme) => ({
+                        track: {
+                            "&:before": {
+                                backgroundColor: "#AEABA9",
+                            }
+                        },
                         bar : {
                             backgroundColor: "#333131",
                         },

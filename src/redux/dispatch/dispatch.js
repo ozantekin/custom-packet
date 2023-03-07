@@ -23,12 +23,24 @@ export const dispatchSuperDailyPed = (payload) => {
     store.dispatch(superDailyPed(payload));
 }
 
+export const dispatchMiniTampon = (payload) => {
+    store.dispatch(miniTampon(payload))
+}
+
+export const dispatchStandardTampon = (payload) => {
+    store.dispatch(standardTampon(payload))
+}
+
 export const dispatchFirstTabReset = () => {
     store.dispatch(firstTabReset());
 }
 
 export const dispatchSecondTabReset = () => {
     store.dispatch(secondTabReset());
+}
+
+export const dispatchThirdTabReset = () => {
+    store.dispatch(thirdTabReset())
 }
 
 export const dispatchFirstTabPrice = () => {
@@ -39,23 +51,6 @@ export const dispatchSecondTabPrice = () => {
     store.dispatch(secondTabPrice())
 }
 
-export const dispatchMiniTampon = (payload) => {
-    store.dispatch(miniTampon(payload))
-}
-
-export const dispatchStandardTampon = (payload) => {
-    store.dispatch(standardTampon(payload))
-}
-
-export const dispatchThirdTabReset = () => {
-    store.dispatch(thirdTabReset())
-}
-
 export const dispatchThirdTabPrice = () => {
     store.dispatch(thirdTabPrice())
 }
-
-
-
-
-console.log(store.getState());

@@ -99,7 +99,7 @@ const MainRight = () => {
                 {(standardValue > 0 || supValue > 0 || plusValue >0 ) &&  <div>
                     <div className="p-6 rounded-lg shadow-md">
                         <p className="text-lg font-medium mb-1"> Ped Paketleri </p>
-                        <p>
+                        <p className="text-[#737373] text-sm">
                             {firstPacketText}
                         </p>
                         <button className="text-sm font-medium py-3 hover:bg-[#F7F7F7] rounded-full" onClick={takeOutFirstPacket}>Paketten Çıkar</button>
@@ -108,7 +108,7 @@ const MainRight = () => {
                 {(dailyValue > 0 || superDailyValue > 0 ) &&  <div>
                     <div className="p-6 rounded-lg shadow-md">
                         <p className="text-lg font-medium mb-1"> Günlük Ped Paketleri </p>
-                        <p>
+                        <p className="text-[#737373] text-sm">
                             {secondPacketText}
                         </p>
                         <button className="text-sm font-medium py-3 hover:bg-[#F7F7F7] rounded-full" onClick={takeOutSecondPacket}>Paketten Çıkar</button>
@@ -117,7 +117,7 @@ const MainRight = () => {
                 {(miniTamponValue > 0 || standardTamponValue > 0 ) &&  <div>
                     <div className="p-6 rounded-lg shadow-md">
                         <p className="text-lg font-medium mb-1"> Tampon Paketleri </p>
-                        <p>
+                        <p className="text-[#737373] text-sm">
                             {thirdPacketText}
                         </p>
                         <button className="text-sm font-medium py-3 hover:bg-[#F7F7F7] rounded-full" onClick={takeOutThirdPacket}>Paketten Çıkar</button>

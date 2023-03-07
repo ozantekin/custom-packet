@@ -45,6 +45,11 @@ const MainLeftSliderSecond = () => {
                     value={dailyValue}
                     onChange={handleDailyValueChange}
                     styles={(theme) => ({
+                        track: {
+                            "&:before": {
+                                backgroundColor: "#AEABA9",
+                            }
+                        },
                         bar : {
                             backgroundColor: "#333131",
                         },
@@ -91,6 +96,11 @@ const MainLeftSliderSecond = () => {
                     value={superDailyValue}
                     onChange={handleSuperDailyValueChange}
                     styles={(theme) => ({
+                        track: {
+                            "&:before": {
+                                backgroundColor: "#AEABA9",
+                            }
+                        },
                         bar : {
                             backgroundColor: "#333131",
                         },

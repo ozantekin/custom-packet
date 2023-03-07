@@ -67,7 +67,7 @@ export const beijePedSlice = createSlice({
     },
 })
 
-// Action creators are generated for each case reducer function
+
 export const { standardPed, supPed, plusPed, dailyPed, superDailyPed, firstTabReset, secondTabReset, firsTabPrice, secondTabPrice, miniTampon, standardTampon, thirdTabReset, thirdTabPrice  } = beijePedSlice.actions
 
 export default beijePedSlice.reducer

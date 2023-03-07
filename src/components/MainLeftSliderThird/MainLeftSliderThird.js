@@ -41,6 +41,11 @@ const MainLeftSliderThird = () => {
                     value={miniTamponValue}
                     onChange={handleMiniTamponValueChange}
                     styles={(theme) => ({
+                        track: {
+                            "&:before": {
+                                backgroundColor: "#AEABA9",
+                            }
+                        },
                         bar : {
                             backgroundColor: "#333131",
                         },
@@ -87,6 +92,11 @@ const MainLeftSliderThird = () => {
                     value={standardTamponValue}
                     onChange={handleStandardTamponValueChange}
                     styles={(theme) => ({
+                        track: {
+                            "&:before": {
+                                backgroundColor: "#AEABA9",
+                            }
+                        },
                         bar : {
                             backgroundColor: "#333131",
                         },

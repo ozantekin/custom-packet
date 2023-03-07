@@ -10,10 +10,10 @@ const MainLeft = () => {
     return(
         <React.Fragment>
             <div className="lg:w-[564px]">
-                <div className="mb-10 lg:mb-18">
+                <div >
                     <div className="flex items-center justify-between mb-6">
                         <p className="text-3xl	 font-medium">Kendi Paketini Oluştur</p>
-                        <p className="lg:flex hidden"> Nasıl Çalışır? </p>
+                        <p className="lg:flex hidden cursor-pointer"> Nasıl Çalışır? </p>
                     </div>
                     <div>
                         <p className="text-[#00000099]">Tercih ve ihtiyaçların doğrultusunda seçeceğin ürünlerden ve miktarlardan, sana özel bir paket oluşturalım.</p>
